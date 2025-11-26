@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.airForm1 = new ReaLTaiizor.Forms.AirForm();
+            this.notice_label2 = new System.Windows.Forms.Label();
             this.notice_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,7 +42,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.notice_label2 = new System.Windows.Forms.Label();
+            this.checkBox_Remember = new System.Windows.Forms.CheckBox();
+            this.checkBox_AutoLogin = new System.Windows.Forms.CheckBox();
             this.airForm1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +52,8 @@
             // 
             this.airForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(58)))), ((int)(((byte)(65)))));
             this.airForm1.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.airForm1.Controls.Add(this.checkBox_AutoLogin);
+            this.airForm1.Controls.Add(this.checkBox_Remember);
             this.airForm1.Controls.Add(this.notice_label2);
             this.airForm1.Controls.Add(this.notice_label);
             this.airForm1.Controls.Add(this.pictureBox1);
@@ -80,11 +84,22 @@
             this.airForm1.Transparent = false;
             this.airForm1.Click += new System.EventHandler(this.airForm1_Click);
             // 
+            // notice_label2
+            // 
+            this.notice_label2.AutoSize = true;
+            this.notice_label2.ForeColor = System.Drawing.Color.White;
+            this.notice_label2.Location = new System.Drawing.Point(45, 306);
+            this.notice_label2.Name = "notice_label2";
+            this.notice_label2.Size = new System.Drawing.Size(13, 20);
+            this.notice_label2.TabIndex = 11;
+            this.notice_label2.Text = " ";
+            this.notice_label2.Click += new System.EventHandler(this.notice_label2_Click);
+            // 
             // notice_label
             // 
             this.notice_label.AutoSize = true;
             this.notice_label.ForeColor = System.Drawing.Color.White;
-            this.notice_label.Location = new System.Drawing.Point(46, 306);
+            this.notice_label.Location = new System.Drawing.Point(45, 306);
             this.notice_label.Name = "notice_label";
             this.notice_label.Size = new System.Drawing.Size(13, 20);
             this.notice_label.TabIndex = 10;
@@ -127,7 +142,7 @@
             this.login_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.login_btn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_btn.ForeColor = System.Drawing.Color.Transparent;
-            this.login_btn.Location = new System.Drawing.Point(38, 354);
+            this.login_btn.Location = new System.Drawing.Point(38, 364);
             this.login_btn.Name = "login_btn";
             this.login_btn.Size = new System.Drawing.Size(415, 55);
             this.login_btn.TabIndex = 7;
@@ -220,16 +235,29 @@
             this.label1.Text = "오셨군요? 환영합니다!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // notice_label2
+            // checkBox_Remember
             // 
-            this.notice_label2.AutoSize = true;
-            this.notice_label2.ForeColor = System.Drawing.Color.White;
-            this.notice_label2.Location = new System.Drawing.Point(46, 306);
-            this.notice_label2.Name = "notice_label2";
-            this.notice_label2.Size = new System.Drawing.Size(13, 20);
-            this.notice_label2.TabIndex = 11;
-            this.notice_label2.Text = " ";
-            this.notice_label2.Click += new System.EventHandler(this.notice_label2_Click);
+            this.checkBox_Remember.AutoSize = true;
+            this.checkBox_Remember.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.checkBox_Remember.ForeColor = System.Drawing.Color.White;
+            this.checkBox_Remember.Location = new System.Drawing.Point(38, 329);
+            this.checkBox_Remember.Name = "checkBox_Remember";
+            this.checkBox_Remember.Size = new System.Drawing.Size(176, 32);
+            this.checkBox_Remember.TabIndex = 12;
+            this.checkBox_Remember.Text = "ID/PW 자동입력";
+            this.checkBox_Remember.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_AutoLogin
+            // 
+            this.checkBox_AutoLogin.AutoSize = true;
+            this.checkBox_AutoLogin.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.checkBox_AutoLogin.ForeColor = System.Drawing.Color.White;
+            this.checkBox_AutoLogin.Location = new System.Drawing.Point(220, 329);
+            this.checkBox_AutoLogin.Name = "checkBox_AutoLogin";
+            this.checkBox_AutoLogin.Size = new System.Drawing.Size(134, 32);
+            this.checkBox_AutoLogin.TabIndex = 13;
+            this.checkBox_AutoLogin.Text = "자동로그인";
+            this.checkBox_AutoLogin.UseVisualStyleBackColor = true;
             // 
             // login
             // 
@@ -267,6 +295,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label notice_label;
         private System.Windows.Forms.Label notice_label2;
+        private System.Windows.Forms.CheckBox checkBox_AutoLogin;
+        private System.Windows.Forms.CheckBox checkBox_Remember;
     }
 }
 

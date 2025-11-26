@@ -32,6 +32,10 @@ namespace WindowsFormsApp5
             {
                 passWord_Box.SizeChanged += textBox_SizeChanged;
             }
+
+            // 자동 로그인 체크박스 이벤트(선택)
+            // 디자이너에서 연결해도 되고, 이렇게 코드에서 직접 연결해도 됩니다.
+            this.checkBox_AutoLogin.CheckedChanged += checkBox_AutoLogin_CheckedChanged;
         }
 
         // 폼 로드 이벤트 이름을 login_Load 로 맞추는 것을 권장
@@ -52,6 +56,28 @@ namespace WindowsFormsApp5
             notice_label2.Text = "";
             notice_label2.ForeColor = Color.Red;
             notice_label2.Visible = false;  // 처음에는 숨김
+
+            // 1) 저장된 체크 상태 불러오기
+            checkBox_Remember.Checked = Properties.Settings.Default.RememberIDPW;
+            checkBox_AutoLogin.Checked = Properties.Settings.Default.AutoLogin;
+
+            // 2) RememberIDPW가 켜져 있으면 ID/PW 자동 입력
+            if (Properties.Settings.Default.RememberIDPW)
+            {
+                iD_Box.Text = Properties.Settings.Default.SavedID;
+                passWord_Box.Text = Properties.Settings.Default.SavedPW;
+            }
+
+            // 3) AutoLogin이 켜져 있고, ID/PW가 비어있지 않다면 자동 로그인 시도
+            if (Properties.Settings.Default.AutoLogin &&
+                !string.IsNullOrEmpty(Properties.Settings.Default.SavedID) &&
+                !string.IsNullOrEmpty(Properties.Settings.Default.SavedPW))
+            {
+                // 바로 로그인 시도
+                TryLogin(Properties.Settings.Default.SavedID,
+                         Properties.Settings.Default.SavedPW,
+                         isAutoLogin: true);
+            }
         }
 
         private void airRadioButton1_CheckedChanged(object sender, EventArgs e)
@@ -182,55 +208,126 @@ namespace WindowsFormsApp5
             string userId = iD_Box.Text.Trim();
             string userPw = passWord_Box.Text.Trim();
 
-            // 2. 빈 값 체크
+            // 2. 공용 로그인 함수 호출 (수동 로그인)
+            TryLogin(userId, userPw, isAutoLogin: false);
+        }
+
+        /// <summary>
+        /// 실제 로그인 시도 함수.
+        /// - isAutoLogin: 자동 로그인인지 여부 (메시지 표시 방식 등에 활용)
+        /// </summary>
+        private void TryLogin(string userId, string userPw, bool isAutoLogin = false)
+        {
+            // 1. 빈 값 체크
             if (string.IsNullOrEmpty(userId) || string.IsNullOrEmpty(userPw))
             {
-                notice_label.ForeColor = Color.White;
-                notice_label2.ForeColor = Color.White;
+                if (!isAutoLogin)  // 자동로그인일 땐 굳이 "입력하세요" 안 띄워도 됨
+                {
+                    notice_label.ForeColor = Color.White;
+                    notice_label2.ForeColor = Color.White;
 
-                // 여기서는 예시로 notice_label만 사용
-                notice_label.Text = "ID와 PW를 입력하세요";
-                notice_label.Visible = true;
+                    notice_label.Text = "ID와 PW를 입력하세요";
+                    notice_label.Visible = true;
 
-                notice_label2.Text = "";
-                notice_label2.Visible = false;
-
+                    notice_label2.Text = "";
+                    notice_label2.Visible = false;
+                }
                 return;
             }
 
-            // 3. MySQL에서 계정 존재 여부 확인
+            // 2. MySQL에서 계정 존재 여부 확인
             bool isExist = CheckUserExists(userId, userPw);
 
             if (!isExist)
             {
-                // ❌ 계정이 없을 때
+                // ❌ 로그인 실패
                 notice_label.ForeColor = Color.White;
                 notice_label2.ForeColor = Color.White;
 
-                // 예: 여기서는 notice_label2를 사용하고, 1은 숨김
                 notice_label.Text = "";
                 notice_label.Visible = false;
 
-                notice_label2.Text = "계정을 생성해주세요.";
+                notice_label2.Text = isAutoLogin
+                    ? "자동 로그인 실패. ID/PW를 확인해주세요."
+                    : "계정을 생성해주세요.";
                 notice_label2.Visible = true;
+
+                return;
+            }
+
+            // ✅ 로그인 성공
+            notice_label.ForeColor = Color.White;
+            notice_label2.ForeColor = Color.White;
+
+            notice_label.Text = "로그인 성공!";
+            notice_label.Visible = true;
+
+            notice_label2.Text = "";
+            notice_label2.Visible = false;
+
+            // 3. 로그인 성공 후, 설정 저장 (체크박스 상태에 따라)
+            SaveLoginSettings(userId, userPw);
+
+            // 4. 이후 동작 (메인폼 등)
+            // MainForm main = new MainForm();
+            // main.Show();
+            // this.Hide();
+        }
+
+        /// <summary>
+        /// 로그인 성공 후, 체크박스 상태에 따라 설정 저장/해제
+        /// </summary>
+        private void SaveLoginSettings(string userId, string userPw)
+        {
+            // 1. ID/PW 자동입력
+            if (checkBox_Remember.Checked)
+            {
+                Properties.Settings.Default.RememberIDPW = true;
+                Properties.Settings.Default.SavedID = userId;
+                Properties.Settings.Default.SavedPW = userPw;
             }
             else
             {
-                // ✅ 계정이 있을 때 (로그인 성공)
-                notice_label.ForeColor = Color.White;
-                notice_label2.ForeColor = Color.White;
+                Properties.Settings.Default.RememberIDPW = false;
+                Properties.Settings.Default.SavedID = "";
+                Properties.Settings.Default.SavedPW = "";
+            }
 
-                // 예: 로그인 성공은 notice_label에 출력
-                notice_label.Text = "로그인 성공!";
-                notice_label.Visible = true;
+            // 2. 자동 로그인
+            if (checkBox_AutoLogin.Checked)
+            {
+                Properties.Settings.Default.AutoLogin = true;
 
-                notice_label2.Text = "";
-                notice_label2.Visible = false;
+                // 자동 로그인이 켜져 있는데 Remember가 꺼져 있으면,
+                // 실질적인 동작을 위해 강제로 저장되도록 맞춤
+                if (!checkBox_Remember.Checked)
+                {
+                    Properties.Settings.Default.RememberIDPW = true;
+                    Properties.Settings.Default.SavedID = userId;
+                    Properties.Settings.Default.SavedPW = userPw;
+                }
+            }
+            else
+            {
+                Properties.Settings.Default.AutoLogin = false;
+            }
 
-                // TODO: 로그인 성공 후 동작 (원하면 나중에 추가)
-                // MainForm main = new MainForm();
-                // main.Show();
-                // this.Hide();
+            // 3. 실제로 디스크에 저장
+            Properties.Settings.Default.Save();
+        }
+
+        /// <summary>
+        /// 자동 로그인 체크박스가 체크될 때, ID/PW 자동입력도 자동으로 켜 주기
+        /// (선택 기능)
+        /// </summary>
+        private void checkBox_AutoLogin_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_AutoLogin.Checked)
+            {
+                if (!checkBox_Remember.Checked)
+                {
+                    checkBox_Remember.Checked = true;
+                }
             }
         }
 
