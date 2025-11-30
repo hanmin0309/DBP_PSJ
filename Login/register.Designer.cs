@@ -238,8 +238,10 @@
             LB_id_duped.ForeColor = Color.IndianRed;
             LB_id_duped.Location = new Point(152, 180);
             LB_id_duped.Name = "LB_id_duped";
-            LB_id_duped.Size = new Size(0, 20);
+            LB_id_duped.Size = new Size(114, 20);
             LB_id_duped.TabIndex = 18;
+            LB_id_duped.Text = "iD중복확인멘트";
+            LB_id_duped.Visible = false;
             // 
             // BT_find_zipCode
             // 

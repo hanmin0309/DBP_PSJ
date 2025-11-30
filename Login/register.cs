@@ -64,11 +64,14 @@ namespace Login
             }
             if (IsIdDuplicated(id))
             {
+                LB_id_duped.Visible = true;
+                LB_id_duped.ForeColor = Color.IndianRed;
                 LB_id_duped.Text = "이미 사용 중인 ID입니다";
                 TB_id.Focus();
             }
             else
             {
+                LB_id_duped.Visible = true;
                 LB_id_duped.ForeColor = Color.SkyBlue;
                 LB_id_duped.Text = "사용 가능한 ID입니다";
             }

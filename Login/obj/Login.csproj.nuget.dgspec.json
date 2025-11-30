@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kdg57\\Desktop\\25학년도 2학기\\SQL프로그래밍\\WindowsFormsApp5\\Login\\Login.csproj": {}
+    "C:\\폴더\\대학\\데이터베이스프로그래밍\\DBP팀과제\\git_pull\\DBP_PSJ\\Login\\Login.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kdg57\\Desktop\\25학년도 2학기\\SQL프로그래밍\\WindowsFormsApp5\\Login\\Login.csproj": {
+    "C:\\폴더\\대학\\데이터베이스프로그래밍\\DBP팀과제\\git_pull\\DBP_PSJ\\Login\\Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kdg57\\Desktop\\25학년도 2학기\\SQL프로그래밍\\WindowsFormsApp5\\Login\\Login.csproj",
+        "projectUniqueName": "C:\\폴더\\대학\\데이터베이스프로그래밍\\DBP팀과제\\git_pull\\DBP_PSJ\\Login\\Login.csproj",
         "projectName": "Login",
-        "projectPath": "C:\\Users\\kdg57\\Desktop\\25학년도 2학기\\SQL프로그래밍\\WindowsFormsApp5\\Login\\Login.csproj",
-        "packagesPath": "C:\\Users\\kdg57\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kdg57\\Desktop\\25학년도 2학기\\SQL프로그래밍\\WindowsFormsApp5\\Login\\obj\\",
+        "projectPath": "C:\\폴더\\대학\\데이터베이스프로그래밍\\DBP팀과제\\git_pull\\DBP_PSJ\\Login\\Login.csproj",
+        "packagesPath": "C:\\Users\\k8814\\.nuget\\packages\\",
+        "outputPath": "C:\\폴더\\대학\\데이터베이스프로그래밍\\DBP팀과제\\git_pull\\DBP_PSJ\\Login\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kdg57\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\k8814\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -82,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

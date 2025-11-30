@@ -69,3 +69,39 @@ C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\L
 C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.pdb
 C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.genruntimeconfig.cache
 C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\ref\Login.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\Login.exe
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\Login.deps.json
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\Login.runtimeconfig.json
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\Login.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\Login.pdb
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\ReaLTaiizor.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.csproj.AssemblyReference.cache
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.login.resources
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.Properties.Resources.resources
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.register.resources
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.csproj.GenerateResource.cache
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.GeneratedMSBuildEditorConfig.editorconfig
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.AssemblyInfoInputs.cache
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.AssemblyInfo.cs
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.csproj.CoreCompileInputs.cache
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.sourcelink.json
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.csproj.Up2Date
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\refint\Login.dll
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.pdb
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\Login.genruntimeconfig.cache
+C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\git_pull\DBP_PSJ\Login\obj\Debug\net8.0-windows\ref\Login.dll
