@@ -39,7 +39,7 @@ namespace Login.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WindowsFormsApp5.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Login.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -86,6 +86,15 @@ namespace Login.Properties {
         internal static System.Drawing.Bitmap 로고_수정본_3 {
             get {
                 object obj = ResourceManager.GetObject("로고 수정본 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap 로고_수정본_4
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("로고 수정본_4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

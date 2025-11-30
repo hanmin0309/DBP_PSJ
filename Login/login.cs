@@ -19,6 +19,10 @@ namespace Login
         {
             InitializeComponent();
 
+            // 1) pictureBox1.Image 가 진짜 null 인지 확인
+            //if (pictureBox1.Image == null)
+            //    MessageBox.Show("pictureBox1.Image 가 아직도 null 입니다.", "디버그");
+
             // 폼 생성 시, 각 텍스트 박스의 SizeChanged 이벤트에
             // 폰트 크기 조정 함수(textBox_SizeChanged)를 연결
             if (this.Controls.Contains(iD_Box))
@@ -387,15 +391,15 @@ namespace Login
             registerForm.FormClosed += (s, args) => this.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+        //private void pictureBox1_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
+        //private void pictureBox1_Click_1(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
         private void notice_label_Click(object sender, EventArgs e)
         {
@@ -420,5 +424,7 @@ namespace Login
         {
 
         }
+
+
     }
 }

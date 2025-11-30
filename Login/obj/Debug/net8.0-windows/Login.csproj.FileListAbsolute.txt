@@ -33,3 +33,39 @@ C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\Login\obj\Debug\
 C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\Login\obj\Debug\net8.0-windows\Login.pdb
 C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\Login\obj\Debug\net8.0-windows\Login.genruntimeconfig.cache
 C:\폴더\대학\데이터베이스프로그래밍\DBP팀과제\Login\obj\Debug\net8.0-windows\ref\Login.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\Login.exe
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\Login.deps.json
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\Login.runtimeconfig.json
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\Login.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\Login.pdb
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\ReaLTaiizor.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.csproj.AssemblyReference.cache
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.login.resources
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.Properties.Resources.resources
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.register.resources
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.csproj.GenerateResource.cache
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.AssemblyInfoInputs.cache
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.AssemblyInfo.cs
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.csproj.CoreCompileInputs.cache
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.sourcelink.json
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.csproj.Up2Date
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\refint\Login.dll
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.pdb
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\Login.genruntimeconfig.cache
+C:\Users\kdg57\Desktop\25학년도 2학기\SQL프로그래밍\WindowsFormsApp5\Login\obj\Debug\net8.0-windows\ref\Login.dll

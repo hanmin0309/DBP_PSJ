@@ -33,7 +33,6 @@
             checkBox_Remember = new CheckBox();
             notice_label2 = new Label();
             notice_label = new Label();
-            pictureBox1 = new PictureBox();
             button1 = new Button();
             login_btn = new Button();
             crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
@@ -44,7 +43,6 @@
             label2 = new Label();
             label1 = new Label();
             airForm1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // airForm1
@@ -55,7 +53,6 @@
             airForm1.Controls.Add(checkBox_Remember);
             airForm1.Controls.Add(notice_label2);
             airForm1.Controls.Add(notice_label);
-            airForm1.Controls.Add(pictureBox1);
             airForm1.Controls.Add(button1);
             airForm1.Controls.Add(login_btn);
             airForm1.Controls.Add(crownLabel1);
@@ -89,7 +86,7 @@
             checkBox_AutoLogin.AutoSize = true;
             checkBox_AutoLogin.Font = new Font("Segoe UI", 12F);
             checkBox_AutoLogin.ForeColor = Color.White;
-            checkBox_AutoLogin.Location = new Point(248, 439);
+            checkBox_AutoLogin.Location = new Point(424, 424);
             checkBox_AutoLogin.Margin = new Padding(3, 4, 3, 4);
             checkBox_AutoLogin.Name = "checkBox_AutoLogin";
             checkBox_AutoLogin.Size = new Size(134, 32);
@@ -102,7 +99,7 @@
             checkBox_Remember.AutoSize = true;
             checkBox_Remember.Font = new Font("Segoe UI", 12F);
             checkBox_Remember.ForeColor = Color.White;
-            checkBox_Remember.Location = new Point(43, 439);
+            checkBox_Remember.Location = new Point(219, 424);
             checkBox_Remember.Margin = new Padding(3, 4, 3, 4);
             checkBox_Remember.Name = "checkBox_Remember";
             checkBox_Remember.Size = new Size(176, 32);
@@ -114,7 +111,7 @@
             // 
             notice_label2.AutoSize = true;
             notice_label2.ForeColor = Color.White;
-            notice_label2.Location = new Point(51, 408);
+            notice_label2.Location = new Point(227, 393);
             notice_label2.Name = "notice_label2";
             notice_label2.Size = new Size(13, 20);
             notice_label2.TabIndex = 11;
@@ -125,24 +122,12 @@
             // 
             notice_label.AutoSize = true;
             notice_label.ForeColor = Color.White;
-            notice_label.Location = new Point(51, 408);
+            notice_label.Location = new Point(227, 393);
             notice_label.Name = "notice_label";
             notice_label.Size = new Size(13, 20);
             notice_label.TabIndex = 10;
             notice_label.Text = " ";
             notice_label.Click += notice_label_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.로고_수정본_3;
-            pictureBox1.Location = new Point(580, 190);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(283, 265);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // button1
             // 
@@ -151,7 +136,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(128, 150, 255);
-            button1.Location = new Point(188, 557);
+            button1.Location = new Point(180, 560);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(99, 40);
@@ -170,7 +155,7 @@
             login_btn.FlatStyle = FlatStyle.Flat;
             login_btn.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             login_btn.ForeColor = Color.Transparent;
-            login_btn.Location = new Point(43, 485);
+            login_btn.Location = new Point(218, 461);
             login_btn.Margin = new Padding(3, 4, 3, 4);
             login_btn.Name = "login_btn";
             login_btn.Size = new Size(467, 73);
@@ -184,7 +169,7 @@
             crownLabel1.AutoSize = true;
             crownLabel1.Font = new Font("Segoe UI", 10F);
             crownLabel1.ForeColor = Color.LightGray;
-            crownLabel1.Location = new Point(14, 563);
+            crownLabel1.Location = new Point(12, 568);
             crownLabel1.Name = "crownLabel1";
             crownLabel1.Size = new Size(159, 23);
             crownLabel1.TabIndex = 6;
@@ -196,7 +181,7 @@
             passWord_Box.BackColor = Color.FromArgb(64, 64, 64);
             passWord_Box.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             passWord_Box.ForeColor = SystemColors.Window;
-            passWord_Box.Location = new Point(43, 331);
+            passWord_Box.Location = new Point(219, 316);
             passWord_Box.Margin = new Padding(3, 4, 3, 4);
             passWord_Box.Name = "passWord_Box";
             passWord_Box.ScrollBars = RichTextBoxScrollBars.None;
@@ -210,7 +195,7 @@
             iD_Box.BackColor = Color.FromArgb(64, 64, 64);
             iD_Box.BorderStyle = BorderStyle.FixedSingle;
             iD_Box.ForeColor = SystemColors.Window;
-            iD_Box.Location = new Point(43, 199);
+            iD_Box.Location = new Point(219, 184);
             iD_Box.Margin = new Padding(3, 4, 3, 4);
             iD_Box.Name = "iD_Box";
             iD_Box.ScrollBars = RichTextBoxScrollBars.None;
@@ -224,7 +209,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(37, 293);
+            label4.Location = new Point(213, 278);
             label4.Name = "label4";
             label4.Size = new Size(84, 25);
             label4.TabIndex = 3;
@@ -235,7 +220,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(37, 153);
+            label3.Location = new Point(213, 138);
             label3.Name = "label3";
             label3.Size = new Size(66, 25);
             label3.TabIndex = 2;
@@ -246,7 +231,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(155, 103);
+            label2.Location = new Point(331, 88);
             label2.Name = "label2";
             label2.Size = new Size(231, 25);
             label2.TabIndex = 1;
@@ -259,7 +244,7 @@
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(104, 33);
+            label1.Location = new Point(280, 18);
             label1.Name = "label1";
             label1.Size = new Size(319, 41);
             label1.TabIndex = 0;
@@ -283,7 +268,6 @@
             Load += login_Load;
             airForm1.ResumeLayout(false);
             airForm1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
 
         }
@@ -300,7 +284,6 @@
         private ReaLTaiizor.Controls.CrownLabel crownLabel1;
         private System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label notice_label;
         private System.Windows.Forms.Label notice_label2;
         private System.Windows.Forms.CheckBox checkBox_AutoLogin;
