@@ -1,0 +1,14 @@
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\bin\Debug\net10.0\chatserver.exe
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\bin\Debug\net10.0\chatserver.deps.json
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\bin\Debug\net10.0\chatserver.runtimeconfig.json
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\bin\Debug\net10.0\chatserver.dll
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\bin\Debug\net10.0\chatserver.pdb
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.GeneratedMSBuildEditorConfig.editorconfig
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.AssemblyInfoInputs.cache
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.AssemblyInfo.cs
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.csproj.CoreCompileInputs.cache
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.dll
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\refint\chatserver.dll
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.pdb
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\chatserver.genruntimeconfig.cache
+D:\계명대학교\수업\3학년 2학기\데이터베이스실습프로그래밍\기말\Code\ChattingApp\chatserver\obj\Debug\net10.0\ref\chatserver.dll
