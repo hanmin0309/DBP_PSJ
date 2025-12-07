@@ -271,7 +271,7 @@ namespace Login
             }
         }
         //최종가입
-        public static void AddNewAccount(string id, string hashedPassword, string name, string address, string nickname, string department, int zipCode, string profilePath)
+        public static void AddNewAccount(string id, string hashedPassword, string name, string address, string nickname, string department, int zipCode, string profilePath, string pw_origin)
         {
             using (MySqlConnection connection = new MySqlConnection(ConnectionString))
             {
@@ -293,8 +293,8 @@ namespace Login
                     }
 
                     //테스트용 ChatUserDetail_test테이블 사용중 수정 필요
-                    string detailInsertQuery = "INSERT INTO ChatUserDetail_test(ID, Password, NickName, Address, Zipcode, Picture) " +
-                                               "VALUES (@id, @pw, @nickname, @address, @zipcode, @picture);";
+                    string detailInsertQuery = "INSERT INTO ChatUserDetail_test(ID, Password, NickName, Address, Zipcode, Picture, department, Pw_Origin) " +
+                                               "VALUES (@id, @pw, @nickname, @address, @zipcode, @picture, @department, @pw_origin);";
 
                     using (MySqlCommand detailCommand = new MySqlCommand(detailInsertQuery, connection, transaction))
                     {
@@ -304,6 +304,9 @@ namespace Login
                         detailCommand.Parameters.AddWithValue("@address", address);
                         detailCommand.Parameters.AddWithValue("@zipcode", zipCode);
                         detailCommand.Parameters.AddWithValue("@picture", profilePath ?? "");
+                        detailCommand.Parameters.AddWithValue("@department", department);
+                        detailCommand.Parameters.AddWithValue("@pw_origin", pw_origin);
+
                         detailCommand.ExecuteNonQuery();
                     }
 
@@ -328,7 +331,7 @@ namespace Login
             string detailAddressInput = TB_address_detail.Text.Trim();
             string nickname = TB_nickname.Text.Trim();
             string department = CB_apartment.SelectedItem?.ToString() ?? "DefaultDept";
-
+            string pw_origin = password;
             if (string.IsNullOrEmpty(id) || string.IsNullOrEmpty(password) ||
                 string.IsNullOrEmpty(passwordCheck) || string.IsNullOrEmpty(name) ||
                 string.IsNullOrEmpty(fullAddress))
@@ -368,7 +371,7 @@ namespace Login
             int zipCode = int.TryParse(zipCodeStr, out int zc) ? zc : 0;
             string finalAddressToSave = baseAddress + " " + detailAddressInput;
 
-            AddNewAccount(id, hashedPassword, name, finalAddressToSave, nickname, department, zipCode, _profileImagePath);
+            AddNewAccount(id, hashedPassword, name, finalAddressToSave, nickname, department, zipCode, _profileImagePath, pw_origin);
             this.Close();
         }
         //BT_close
