@@ -57,6 +57,7 @@
             // 
             // PB_Override
             // 
+            PB_Override.BackColor = Color.DarkGray;
             PB_Override.Location = new Point(86, 52);
             PB_Override.Name = "PB_Override";
             PB_Override.Size = new Size(222, 188);

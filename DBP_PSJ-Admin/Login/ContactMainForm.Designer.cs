@@ -51,6 +51,7 @@ namespace Login
             btnAdmin = new Button();
             btnWhite = new Button();
             btnEditProfile = new Button();
+            btnLogout = new Button();
             contextMenuStrip2.SuspendLayout();
             SuspendLayout();
             // 
@@ -106,7 +107,7 @@ namespace Login
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(405, 227);
+            txtSearch.Location = new Point(429, 227);
             txtSearch.Margin = new Padding(3, 2, 3, 2);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(96, 23);
@@ -126,7 +127,7 @@ namespace Login
             // btnAddFavorite
             // 
             btnAddFavorite.Font = new Font("맑은 고딕", 9F);
-            btnAddFavorite.Location = new Point(236, 205);
+            btnAddFavorite.Location = new Point(236, 202);
             btnAddFavorite.Margin = new Padding(3, 2, 3, 2);
             btnAddFavorite.Name = "btnAddFavorite";
             btnAddFavorite.Size = new Size(150, 21);
@@ -137,7 +138,7 @@ namespace Login
             // 
             // btnRemoveFavorite
             // 
-            btnRemoveFavorite.Location = new Point(392, 202);
+            btnRemoveFavorite.Location = new Point(401, 202);
             btnRemoveFavorite.Margin = new Padding(3, 2, 3, 2);
             btnRemoveFavorite.Name = "btnRemoveFavorite";
             btnRemoveFavorite.Size = new Size(133, 21);
@@ -189,11 +190,22 @@ namespace Login
             btnEditProfile.UseVisualStyleBackColor = true;
             btnEditProfile.Click += btnEditProfile_Click;
             // 
+            // btnLogout
+            // 
+            btnLogout.Location = new Point(459, 4);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(75, 23);
+            btnLogout.TabIndex = 11;
+            btnLogout.Text = "로그아웃";
+            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.Click += btnLogout_Click;
+            // 
             // ContactMainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(537, 428);
+            Controls.Add(btnLogout);
             Controls.Add(btnEditProfile);
             Controls.Add(btnWhite);
             Controls.Add(btnAdmin);
@@ -221,5 +233,6 @@ namespace Login
         private ContextMenuStrip contextMenuStrip2;
         private ToolStripMenuItem cmsContacts;
         private ToolStripMenuItem menuSetMultiProfile;
+        private Button btnLogout;
     }
 }

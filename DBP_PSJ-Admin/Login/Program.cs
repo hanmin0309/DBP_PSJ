@@ -63,7 +63,7 @@ namespace Login
             try
             {
                 ChatSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                ChatSocket.Connect(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9999));
+                ChatSocket.Connect(new IPEndPoint(IPAddress.Parse("20.196.136.110"), 9999));
             }
             catch (SocketException ex)
             {

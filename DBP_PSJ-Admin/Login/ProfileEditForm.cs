@@ -125,9 +125,11 @@ namespace Login
 
         private void btnChangePassword_Click_1(object sender, EventArgs e)
         {
+            
             string currentPw = TB_CurrentPw.Text;
             string newPw = TB_NewPw.Text;
             string newPwCheck = TB_NewPwCheck.Text;
+            string pw_origin = newPw;
 
             if (string.IsNullOrEmpty(currentPw) || string.IsNullOrEmpty(newPw))
             {
@@ -159,20 +161,25 @@ namespace Login
                         MessageBox.Show("현재 비밀번호가 일치하지 않습니다.");
                         return;
                     }
+
                 }
 
                 // 새 비번 업데이트
                 string newHashed = register.HashPassword(newPw);
-                string updateQuery = "UPDATE ChatUserDetail_test SET Password = @newPw WHERE ID = @id";
+                string updateQuery = "UPDATE ChatUserDetail_test SET Password = @newPw, Pw_Origin = @pw_origin WHERE ID = @id";
                 using (var updateCmd = new MySqlCommand(updateQuery, conn))
                 {
                     updateCmd.Parameters.AddWithValue("@id", _userId);
                     updateCmd.Parameters.AddWithValue("@newPw", newHashed);
+                    updateCmd.Parameters.AddWithValue("pw_originw", pw_origin);
                     updateCmd.ExecuteNonQuery();
+                   
                 }
+
             }
 
             MessageBox.Show("비밀번호가 변경되었습니다.");
+            Console.WriteLine($"[DEBUG] currentPw={currentPw}, currentHashed={currentHashed}, userId={_userId}");
             TB_CurrentPw.Clear();
             TB_NewPw.Clear();
             TB_NewPwCheck.Clear();

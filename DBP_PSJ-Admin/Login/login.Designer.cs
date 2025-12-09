@@ -183,7 +183,7 @@
             passWord_Box.BorderStyle = BorderStyle.FixedSingle;
             passWord_Box.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             passWord_Box.ForeColor = SystemColors.Window;
-            passWord_Box.Location = new Point(166, 139);
+            passWord_Box.Location = new Point(170, 231);
             passWord_Box.Margin = new Padding(2, 3, 2, 3);
             passWord_Box.Multiline = false;
             passWord_Box.Name = "passWord_Box";
@@ -199,7 +199,7 @@
             iD_Box.BackColor = Color.FromArgb(64, 64, 64);
             iD_Box.BorderStyle = BorderStyle.FixedSingle;
             iD_Box.ForeColor = SystemColors.Window;
-            iD_Box.Location = new Point(170, 237);
+            iD_Box.Location = new Point(170, 127);
             iD_Box.Margin = new Padding(2, 3, 2, 3);
             iD_Box.Multiline = false;
             iD_Box.Name = "iD_Box";

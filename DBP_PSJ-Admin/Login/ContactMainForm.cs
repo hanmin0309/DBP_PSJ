@@ -36,6 +36,9 @@ namespace Login
         // 검색/TreeView용 전체 유저 목록 캐시
         private List<UserInfo> allUsers = new List<UserInfo>();
 
+        // ⭐ 로그아웃 플래그 추가
+        private bool isLoggingOut = false;
+
         public ContactMainForm(DataTable usertable)
         {
             InitializeComponent();
@@ -58,7 +61,7 @@ namespace Login
             // 아래 채팅방 목록: DirectChatForm.Text 를 표시
             lstChatList.DisplayMember = "Text";
 
-            // 이 폼이 닫히면 프로그램 전체 종료
+            // 이 폼이 닫히면 처리
             this.FormClosing += ContactMainForm_FormClosing;
 
             // ★ 로그인한 사용자 ID를 Program.CurrentUserId에 세팅 (ChatUserDetail_test.ID)
@@ -85,14 +88,16 @@ namespace Login
         }
 
         /// <summary>
-        /// ContactMainForm 이 닫힐 때 앱 전체 종료
+        /// ContactMainForm 이 닫힐 때 처리
         /// </summary>
         private void ContactMainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            // ⭐ 로그아웃이 아닐 때만 앱 전체 종료
+            if (!isLoggingOut)
+            {
+                Application.Exit();
+            }
         }
-
-
 
         public void ApplyTheme(bool dark)
         {
@@ -109,6 +114,7 @@ namespace Login
             Color inputBg = Color.FromArgb(64, 64, 64);  // 검색 박스 등
             Color textCol = Color.White;
             Color accent = Color.FromArgb(88, 101, 242); // 포인트 버튼 색
+            Color logoutColor = Color.FromArgb(220, 50, 50); // ⭐ 로그아웃 버튼 색
 
             // 폼 전체
             this.BackColor = formBg;
@@ -150,7 +156,7 @@ namespace Login
                 txtSearch.BorderStyle = BorderStyle.FixedSingle;
             }
 
-            // 버튼들: 검색 / 즐찾 추가 / 즐찾 삭제
+            // 일반 버튼들: 검색 / 즐찾 추가 / 즐찾 삭제
             Button[] btns =
             {
                 btnSearch,
@@ -160,6 +166,7 @@ namespace Login
 
             btnAdmin.ForeColor = Color.Black;
             btnWhite.ForeColor = Color.Black;
+            btnEditProfile.ForeColor = Color.Black;
 
             foreach (var b in btns)
             {
@@ -169,6 +176,16 @@ namespace Login
                 b.FlatStyle = FlatStyle.Flat;
                 b.FlatAppearance.BorderSize = 0;
                 b.FlatAppearance.MouseDownBackColor = Color.FromArgb(128, 128, 255);
+            }
+
+            // ⭐ 로그아웃 버튼 스타일
+            if (btnLogout != null)
+            {
+                btnLogout.BackColor = logoutColor;
+                btnLogout.ForeColor = Color.White;
+                btnLogout.FlatStyle = FlatStyle.Flat;
+                btnLogout.FlatAppearance.BorderSize = 0;
+                btnLogout.FlatAppearance.MouseDownBackColor = Color.FromArgb(200, 30, 30);
             }
 
             if (btnWhite != null)
@@ -181,6 +198,7 @@ namespace Login
             Color panelBg = Color.White;
             Color inputBg = Color.White;
             Color textCol = Color.Black;
+            Color logoutColor = Color.FromArgb(220, 50, 50); // ⭐ 로그아웃 버튼 색
 
             this.BackColor = formBg;
             this.ForeColor = textCol;
@@ -226,12 +244,20 @@ namespace Login
                 b.FlatStyle = FlatStyle.Standard;
             }
 
+            // ⭐ 로그아웃 버튼 스타일 (화이트 모드)
+            if (btnLogout != null)
+            {
+                btnLogout.BackColor = logoutColor;
+                btnLogout.ForeColor = Color.White;
+                btnLogout.FlatStyle = FlatStyle.Flat;
+                btnLogout.FlatAppearance.BorderSize = 0;
+            }
+
             if (btnWhite != null)
-                btnWhite.Text = "다크 모드";   // 다시 누르면 다크 모드로
+                btnWhite.Text = "다크 모드";
         }
 
         // ================== 서버에서 온 유저 리스트(TreeView) 설정 ==================
-        // data 형식 예: "부서|표시이름|ID\n부서|표시이름|ID\n..."
         public void SetUserTree(string data)
         {
             tvContacts.Nodes.Clear();
@@ -240,7 +266,6 @@ namespace Login
             Dictionary<string, TreeNode> deptNodes =
                 new Dictionary<string, TreeNode>();
 
-            // ★ 내 ID (OwnerID)
             string myId = Program.CurrentUserId;
 
             string[] lines = data.Split(new char[] { '\n' },
@@ -252,9 +277,8 @@ namespace Login
 
                 string dept = parts[0];
                 string disp = parts[1];
-                string id = parts[2];     // ChatUserDetail_test.ID
+                string id = parts[2];
 
-                // ★ override 조회 (내가 이 상대에게 어떻게 보일지)
                 string finalDisplayName = disp;
 
                 try
@@ -268,9 +292,8 @@ namespace Login
                 }
                 catch
                 {
-                    // DB 오류나도 연락처 전체가 안 뜨는 일 막기 위해 조용히 무시
                 }
-                // 검색용 캐시
+
                 UserInfo u = new UserInfo
                 {
                     DeptName = dept,
@@ -279,7 +302,6 @@ namespace Login
                 };
                 allUsers.Add(u);
 
-                // TreeView 구성
                 TreeNode deptNode;
                 if (!deptNodes.TryGetValue(dept, out deptNode))
                 {
@@ -289,7 +311,7 @@ namespace Login
                 }
 
                 TreeNode uNode = new TreeNode(disp);
-                uNode.Tag = id;          // Tag에 ID 저장
+                uNode.Tag = id;
                 deptNode.Nodes.Add(uNode);
             }
 
@@ -297,7 +319,6 @@ namespace Login
         }
 
         // ================== 즐겨찾기 리스트 설정 ==================
-        // data 형식 예: "ID|NickName\nID|NickName\n..."
         public void SetFavoriteList(string data)
         {
             lstFavorites.Items.Clear();
@@ -311,8 +332,8 @@ namespace Login
 
                 FavoriteItem item = new FavoriteItem
                 {
-                    EmpId = parts[0],   // = ChatUserDetail_test.ID
-                    DisplayName = parts[1]    // = NickName
+                    EmpId = parts[0],
+                    DisplayName = parts[1]
                 };
 
                 lstFavorites.Items.Add(item);
@@ -333,7 +354,6 @@ namespace Login
 
             string type = cbSearchType.SelectedItem.ToString();
 
-            // allUsers 에서 필터링
             List<UserInfo> filtered =
                 allUsers.Where(u =>
                 {
@@ -352,10 +372,8 @@ namespace Login
                 return;
             }
 
-            // 첫 번째 결과로 이동
             UserInfo first = filtered[0];
 
-            // TreeView에서 해당 노드 찾기
             foreach (TreeNode deptNode in tvContacts.Nodes)
             {
                 foreach (TreeNode uNode in deptNode.Nodes)
@@ -378,8 +396,8 @@ namespace Login
         {
             if (e.Node == null || e.Node.Tag == null) return;
 
-            string targetId = e.Node.Tag.ToString();   // 상대방 ID
-            OpenDirectChat(targetId, e.Node.Text);     // 표시 이름
+            string targetId = e.Node.Tag.ToString();
+            OpenDirectChat(targetId, e.Node.Text);
         }
 
         // ================== 즐겨찾기 더블클릭 → 1:1 채팅 ==================
@@ -398,10 +416,8 @@ namespace Login
             chat.Show();
             chat.Focus();
 
-            // 히스토리 요청 (DMH + 상대 ID)
             Program.SendPacket("DMH", targetId);
 
-            // 채팅 목록 갱신
             UpdateChatList();
         }
 
@@ -411,7 +427,7 @@ namespace Login
             TreeNode node = tvContacts.SelectedNode;
             if (node == null || node.Tag == null) return;
 
-            string targetId = node.Tag.ToString();   // 선택된 유저 ID
+            string targetId = node.Tag.ToString();
             Program.SendPacket("FAV", targetId);
         }
 
@@ -433,9 +449,6 @@ namespace Login
                 DirectChatForm f = kv.Value;
                 if (f == null || f.IsDisposed) continue;
 
-                // DisplayMember = "Text" 이므로
-                // 여기서는 DirectChatForm 객체 자체를 넣어주면
-                // ListBox에는 f.Text(예: "1:1 채팅 - qwer(qwer)")가 표시됨
                 lstChatList.Items.Add(f);
             }
         }
@@ -452,13 +465,10 @@ namespace Login
 
         private void btnWhite_Click(object sender, EventArgs e)
         {
-            // 전역 테마 플래그 토글
             Program.IsDarkTheme = !Program.IsDarkTheme;
 
-            // 메인 폼 테마 적용
             ApplyTheme(Program.IsDarkTheme);
 
-            // 모든 열린 채팅방에도 적용
             foreach (var kv in Program.DirectChats)
             {
                 var form = kv.Value;
@@ -470,7 +480,6 @@ namespace Login
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             var adminform = new AdminForm();
-
             adminform.Show();
         }
 
@@ -481,7 +490,6 @@ namespace Login
 
         private void btnEditProfile_Click(object sender, EventArgs e)
         {
-            // 현재 로그인한 내 ID 사용
             string myId = Program.CurrentUserId;
             if (string.IsNullOrEmpty(myId))
             {
@@ -493,8 +501,6 @@ namespace Login
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    // 필요하다면: 내 정보 다시 로드 / 화면 반영
-                    // 예: Program.CurrentUserTable 다시 조회 등
                 }
             }
         }
@@ -511,7 +517,6 @@ namespace Login
 
         private void menuSetMultiProfile_Click(object sender, EventArgs e)
         {
-            // 현재 TreeView에서 선택된 노드
             TreeNode node = tvContacts.SelectedNode;
             if (node == null || node.Tag == null)
             {
@@ -519,10 +524,8 @@ namespace Login
                 return;
             }
 
-            // 선택한 노드의 상대방 ID (SetUserTree에서 Tag에 ID를 넣어둔 상태)
             string targetId = node.Tag.ToString();
 
-            // 현재 로그인한 내 ID
             string myId = Program.CurrentUserId;
             if (string.IsNullOrEmpty(myId))
             {
@@ -530,17 +533,61 @@ namespace Login
                 return;
             }
 
-            // 멀티 프로필 설정 폼 띄우기
             using (var form = new MultiProfileForm(myId, targetId))
             {
                 form.ShowDialog();
-                // 필요하면 여기서 채팅 목록 갱신 등 해도 됨
             }
         }
 
         private void tvContacts_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
+        }
+
+        // ⭐⭐⭐ 로그아웃 버튼 클릭 이벤트 ⭐⭐⭐
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            // 확인 메시지
+            DialogResult result = MessageBox.Show(
+                "로그아웃 하시겠습니까?\n자동 로그인이 해제됩니다.",
+                "로그아웃",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result != DialogResult.Yes)
+                return;
+
+            // 1. 자동 로그인 설정 해제
+            Properties.Settings.Default.AutoLogin = false;
+            Properties.Settings.Default.RememberIDPW = false;
+            Properties.Settings.Default.SavedID = "";
+            Properties.Settings.Default.SavedPW = "";
+            Properties.Settings.Default.Save();
+
+            // 2. 열려있는 모든 채팅창 닫기
+            var chatForms = Program.DirectChats.Values.ToList();
+            foreach (var form in chatForms)
+            {
+                if (form != null && !form.IsDisposed)
+                {
+                    form.Close();
+                }
+            }
+            Program.DirectChats.Clear();
+
+            // 3. 서버 연결 종료 (필요시 Program.cs에 Disconnect 메서드 추가)
+            // Program.DisconnectServer();
+
+            // 4. 로그아웃 플래그 설정 (Application.Exit() 방지)
+            isLoggingOut = true;
+
+            // 5. 로그인 폼 다시 열기
+            login loginForm = new login();
+            loginForm.Show();
+
+            // 6. 현재 ContactMainForm 닫기
+            this.Close();
         }
     }
 }

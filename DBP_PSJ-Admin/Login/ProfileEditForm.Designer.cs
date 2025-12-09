@@ -148,6 +148,9 @@
             // 
             // PB_Profile
             // 
+            PB_Profile.BackColor = Color.White;
+            PB_Profile.BackgroundImageLayout = ImageLayout.Stretch;
+            PB_Profile.BorderStyle = BorderStyle.FixedSingle;
             PB_Profile.Location = new Point(333, 35);
             PB_Profile.Name = "PB_Profile";
             PB_Profile.Size = new Size(151, 149);
