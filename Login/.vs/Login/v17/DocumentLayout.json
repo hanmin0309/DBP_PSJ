@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\dbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:dbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\logconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:logconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\searchcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:searchcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\contorl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:contorl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\searchcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:searchcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\logconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:logconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|c:\\users\\n2002\\desktop\\dbp_psj-admin\\login\\contorl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92755125-901D-4D22-8994-4F63E414F695}|Login.csproj|solutionrelative:contorl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 155,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBconnector.cs",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\DBconnector.cs",
+              "RelativeDocumentMoniker": "DBconnector.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\DBconnector.cs",
+              "RelativeToolTip": "DBconnector.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAhwLMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:41:36.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Department.cs",
+              "RelativeDocumentMoniker": "Department.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Department.cs",
+              "RelativeToolTip": "Department.cs",
+              "ViewState": "AgIAAP4AAAAAAAAAAADwvxYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:40:46.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Department.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Department.cs",
+              "RelativeDocumentMoniker": "Department.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Department.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Department.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:40:45.321Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserManagement.cs",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\UserManagement.cs",
+              "RelativeDocumentMoniker": "UserManagement.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\UserManagement.cs",
+              "RelativeToolTip": "UserManagement.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAABMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:40:36.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SearchComment.cs",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\SearchComment.cs",
+              "RelativeDocumentMoniker": "SearchComment.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\SearchComment.cs",
+              "RelativeToolTip": "SearchComment.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAADwv/oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:40:34.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogConfirm.cs",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\LogConfirm.cs",
+              "RelativeDocumentMoniker": "LogConfirm.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\LogConfirm.cs",
+              "RelativeToolTip": "LogConfirm.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAvwCcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:40:07.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contorl.cs",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Contorl.cs",
+              "RelativeDocumentMoniker": "Contorl.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Contorl.cs",
+              "RelativeToolTip": "Contorl.cs",
+              "ViewState": "AgIAAMEBAAAAAAAAAADwv+IBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:39:56.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contorl.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Contorl.cs",
+              "RelativeDocumentMoniker": "Contorl.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\Contorl.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Contorl.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T10:39:45.937Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SearchComment.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\SearchComment.cs",
+              "RelativeDocumentMoniker": "SearchComment.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\SearchComment.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "SearchComment.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:41:00.391Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserManagement.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\UserManagement.cs",
+              "RelativeDocumentMoniker": "UserManagement.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\UserManagement.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "UserManagement.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T06:40:59.019Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogConfirm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\LogConfirm.cs",
+              "RelativeDocumentMoniker": "LogConfirm.cs",
+              "ToolTip": "C:\\Users\\n2002\\Desktop\\DBP_PSJ-Admin\\Login\\LogConfirm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "LogConfirm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T18:40:59.539Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
